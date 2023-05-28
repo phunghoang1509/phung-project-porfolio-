@@ -152,6 +152,7 @@ a:hover {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 4rem;
 }
 
 .subtitle-a {
@@ -446,7 +447,7 @@ a:hover {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
-  background-color: #4e4e4e;;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 #header .logo {
@@ -728,7 +729,95 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
 
+.hero .hero-content {
+  text-align: center;
+  position: absolute;
+}
+
+.hero .overlay-itro {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.hero .hero-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  .hero .hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+.hero .hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .hero .hero-subtitle {
+    font-size: 2.5rem;
+  }
+}
+
+.hero .text-slider-items {
+  display: none;
+}
+
+.hero-single {
+  height: 350px;
+}
+
+.hero-single .hero-content {
+  margin-top: 30px;
+}
+
+.hero-single .hero-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  .hero-single .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+.hero-single .breadcrumb {
+  background-color: transparent;
+  color: #0078ff;
+}
+
+.hero-single .breadcrumb .breadcrumb-item:before {
+  color: #cde1f8;
+}
+
+.hero-single .breadcrumb .breadcrumb-item.active {
+  color: #cde1f8;
+}
+
+.hero-single .breadcrumb a {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -816,36 +905,7 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
-# Counter
---------------------------------------------------------------*/
-.counter-box {
-  color: #fff;
-  text-align: center;
-}
 
-@media (min-width: 577px) {
-  .counter-box {
-    margin-bottom: 1.8rem;
-  }
-}
-
-.counter-ico {
-  margin-bottom: 1rem;
-}
-
-.counter-ico .ico-circle {
-  height: 60px;
-  width: 60px;
-  line-height: 1.5;
-  box-shadow: 0 0 0 10px #cde1f8;
-}
-
-.counter-num .counter {
-  font-size: 2rem;
-  margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .work-box {
