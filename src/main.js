@@ -11,13 +11,14 @@ import BlogPage from "./pages/BlogPage";
 import ContactPage from "./pages/ContactPage";
 
 
-router.on("/home", () => render(HomePage,app));
+router.on("/", () => render(HomePage,app));
 router.on("/about",() => render(AboutPage,app));
 router.on("/service",() => render(ServicesPage,app));
 router.on("/work",() => render(WorkPage,app));
 router.on("/blog", () => render(BlogPage,app));
 router.on("/contact", () => render(ContactPage,app));
-// render(WorkPage , app);
+
+router.resolve();
 
 
 
